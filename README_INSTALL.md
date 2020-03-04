@@ -19,7 +19,6 @@ brew update
 brew install node
 
 brew upgrade node
-
 ```
 
 ### Instalación 🔧
@@ -29,15 +28,41 @@ _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener 
 _Dí cómo será ese paso_
 
 ```
-#verify dependencies out date
+#verify dependency out date
 npm outdated
 
 #update dependencies
 npm update
 
-#dependencie babel 
-#
+#install dependency babel 
 npm install @babel/register
+
+#install dependency nodemon restar server 
+npm install nodemon --dev
+
+#install dotenv enviroment 
+npm install dotenv
+
+#install dependency webpack 
+npm install webpack-dev-middleware webpack-hot-middleware --dev
+
+npm install webpack
+
+#npm install dependency react-hot-loader. Mode  HotModuleReplacementPlugin 
+npm install react-hot-loader --dev
+
+#npm install dependency history and react-router-config
+npm install history react-router-config
+
+#npm install dependency react-router
+npm install react-router 
+
+#npm install dependency ignore-styles
+npm install ignore-styles
+
+#npm install dependency asset-require-hook. mode development 
+npm install asset-require-hook
+
 ```
 
 _Y repite_

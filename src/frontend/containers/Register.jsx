@@ -23,7 +23,7 @@ const Register = props => {
     event.preventDefault();
     props.registerRequest(form);
     props.history.push('/');
-  }
+  };
 
   return(
     <>

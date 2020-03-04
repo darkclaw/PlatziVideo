@@ -17,13 +17,13 @@ const Login = props => {
       ...form,
       [event.target.name]: event.target.value
     })
-  }
+  };
 
   const handleSubmit = event => {
     event.preventDefault();
     props.loginRequest(form);
     props.history.push('/');
-  }
+  };
 
   return (
     <>
@@ -68,7 +68,7 @@ const Login = props => {
       </section>
     </>
   );
-}
+};
 
 const mapDispatchToProps = {
   loginRequest,
