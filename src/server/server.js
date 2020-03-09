@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import webpack from 'webpack';
 import React from 'react';
+import helmet from 'helmet';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -24,15 +25,21 @@ if(ENV == 'development'){
 	const webpackHotMiddleware = require('webpack-hot-middleware');
 	const compiler = webpack(webpackConfig);
 	const serverConfig = {port: PORT, hot: true};
-
 	app.use(webpackDevMiddleware(compiler, serverConfig));
 	app.use(webpackHotMiddleware(compiler));
+} else {
+	app.use(express.static(`${__dirname}/public`));
+	app.use(helmet());
+	app.use(helmet.permittedCrossDomainPolicies());
+	app.disable('x-powered-by');
 }
 
 const setResponse = (html, preloadedState) => {
 	return (`<!DOCTYPE html>
-		<html>
+		<html lang="es">
 		  <head>
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <meta name="Description" content="Platzy Videos es un portal diseñado para el aprendizaje.">
 		  <link rel="stylesheet" href="assets/app.css" />
 		    <title>Platzi Video</title>
 		  </head>
@@ -48,6 +55,7 @@ const setResponse = (html, preloadedState) => {
 };
 
 const renderApp = (req, res) =>{
+	console.log(req.url);
 	const store = createStore(reducer, initialState);
 	const preloadedState = store.getState();
 	const html = renderToString(
@@ -66,5 +74,5 @@ app.get('*', renderApp);
 
 app.listen(PORT, (err) => {
 	if(err) console.log(err);
-	else console.log('Server running on port 3000 http://localhost:3000/');
+	else console.log('Server running on port '+ PORT +' http://localhost:'+ PORT +'/');
 });

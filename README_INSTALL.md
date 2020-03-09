@@ -11,7 +11,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Es necesario instalar npm, para eso necesitamos instalar node en nuestro ambiente local, las siguientes instrucciones son para MacOS (la versión que se tiene al momento de realizar este documento es 10.14.6)_
 
 ```
 brew update
@@ -23,7 +23,7 @@ brew upgrade node
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Los siguientes comandos son para actualizar el proyecto _
 
 _Dí cómo será ese paso_
 
@@ -63,12 +63,15 @@ npm install ignore-styles
 #npm install dependency asset-require-hook. mode development 
 npm install asset-require-hook
 
+#npm install dependency helmet. https://helmetjs.github.io/ Helmet helps you secure your Express apps by setting various HTTP headers. It’s not a silver bullet, but it can help!
+npm install helmet
+
 ```
 
 _Y repite_
 
 ```
-hasta finalizar
+hasta finalizar npm run build
 ```
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
