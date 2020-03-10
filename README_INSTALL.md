@@ -51,7 +51,7 @@ npm outdated
 npm update
 ```
 
-_ - Ahora iniciemos la instalción de las dependecias, las sigientes dependencias son para production y **development**._
+_Ahora iniciemos la instalción de las dependecias, las sigientes dependencias son para production y **development**._
 
 ```
 #install dependency babel 
@@ -87,7 +87,7 @@ npm install eslint --save-dev
 
 ```
 
-_ - Las siguientes dependencias son para el ambiente **development**._
+_Las siguientes dependencias son para el ambiente **development**._
 
 ```
 #npm install dependency react-hot-loader. Mode HotModuleReplacementPlugin. env **development** 
@@ -98,7 +98,7 @@ npm install asset-require-hook
 
 ```
 
-_ - Las siguientes dependencias se eejecutan en el ambiente production._
+_Las siguientes dependencias se eejecutan en el ambiente production._
 
 ```
 #npm install dependency helmet  env production
