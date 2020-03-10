@@ -6,7 +6,7 @@ _Esta arquitectura es una propuesta inicial, para comenzar cualquier desarrollo 
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto en producción y desarrollo.
+Mira **Despliegue** para conocer como desplegar el proyecto en producción y desarrollo.
 
 
 ### Pre-requisitos 📋
@@ -25,13 +25,13 @@ _Antes de instalar las dependencias es necesario definir en que ambiente trabaja
 
 _El archivo .env debe conter los siquientes parámetros_
 
-_.env development_
+_.env **development**_
 ```
 ENV=development
 PORT=3000
 ```
 
-_.env production_
+_.env **production**_
 ```
 ENV=production
 PORT=8080
@@ -39,7 +39,7 @@ PORT=8080
 
 ### Instalación 🔧
 
-_Los siguientes comandos son para actualizar e instalar las dependencias dependiendo del ambiente, las opcines que tenemos son development y production. Algunas dependencias solo se usan en production y otras en development como veremos más adelante_
+_Los siguientes comandos son para actualizar e instalar las dependencias dependiendo del ambiente, las opciones que tenemos son **development** y **production**. Algunas dependencias solo se usan en production y otras en development como veremos más adelante_
 
 _ - Comencemos actualizando las dependencias del package.json con los siguientes comandos._
 
