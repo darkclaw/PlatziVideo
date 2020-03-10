@@ -48,7 +48,7 @@ npm install webpack-dev-middleware webpack-hot-middleware --dev
 
 npm install webpack
 
-#npm install dependency react-hot-loader. Mode  HotModuleReplacementPlugin 
+#npm install dependency react-hot-loader. Mode HotModuleReplacementPlugin. env development 
 npm install react-hot-loader --dev
 
 #npm install dependency history and react-router-config
@@ -58,13 +58,39 @@ npm install history react-router-config
 npm install react-router 
 
 #npm install dependency ignore-styles
-npm install ignore-styles
+npm install ignore-styles 
 
-#npm install dependency asset-require-hook. mode development 
+#npm install dependency asset-require-hook. env development 
 npm install asset-require-hook
 
-#npm install dependency helmet. https://helmetjs.github.io/ Helmet helps you secure your Express apps by setting various HTTP headers. It’s not a silver bullet, but it can help!
+#npm install dependency helmet 
+#https://helmetjs.github.io/ Helmet helps you secure your Express apps by setting various HTTP headers. It’s not a silver bullet, but it can help!
 npm install helmet
+
+#npm install dependency compression-webpack-plugin. env production 
+npm install compression-webpack-plugin --save-dev
+
+#npm install dependency compression-webpack-plugin. 
+#This plugin uses terser to minify your JavaScript. env production 
+
+npm install terser-webpack-plugin --save-dev
+
+#npm install dependency optimize-css-assets-webpack-plugin. env production
+#Note: For webpack v3 or below please use optimize-css-assets-webpack-plugin@3.2.0. The optimize-css-assets-webpack-plugin@4.0.0 version and above supports webpack v4
+
+npm install --save-dev optimize-css-assets-webpack-plugin@4.0.0
+
+#npm install dependency npm install webpack-manifest-plugin. env production 
+npm install webpack-manifest-plugin
+
+#npm install dependency eslint-loader. 
+# A ESlint loader for webpack Note: You also need to install eslint from npm, if you haven't already: npm install eslint --save-dev
+
+npm install eslint-loader --save-dev
+
+#npm install dependency eslint
+npm install eslint --save-dev
+
 
 ```
 
