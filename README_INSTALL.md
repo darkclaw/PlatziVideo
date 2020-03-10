@@ -41,7 +41,7 @@ PORT=8080
 
 _Los siguientes comandos son para actualizar e instalar las dependencias dependiendo del ambiente, las opciones que tenemos son **development** y **production**. Algunas dependencias solo se usan en production y otras en development como veremos más adelante_
 
-_ - Comencemos actualizando las dependencias del package.json con los siguientes comandos._
+_Comencemos actualizando las dependencias del package.json con los siguientes comandos._
 
 ```
 #verify dependency out date
