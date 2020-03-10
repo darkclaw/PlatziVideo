@@ -21,9 +21,9 @@ brew install node
 brew upgrade node
 ```
 
-_Antes de instalar las dependencias es necesario definir en que ambiente trabajaremos nuestro proyecto, para eso creamos el archivo .env, si ya se encuentra en el proyecto lo modificamos._
+_Antes de instalar las dependencias es necesario definir en que ambiente trabajaremos nuestro proyecto, entonces creamos el archivo .env si no existe, si ya se encuentra en el proyecto entonces lo modificamos._
 
-_El archivo .env debe conter los siquientes parametros_
+_El archivo .env debe conter los siquientes parámetros_
 
 _.env development_
 ```
@@ -41,7 +41,7 @@ PORT=8080
 
 _Los siguientes comandos son para actualizar e instalar las dependencias dependiendo del ambiente, las opcines que tenemos son development y production. Algunas dependencias solo se usan en production y otras en development como veremos más adelante_
 
-_Comencemos actualizando las dependencias del package.json con los siguientes comandos_
+_ - Comencemos actualizando las dependencias del package.json con los siguientes comandos._
 
 ```
 #verify dependency out date
@@ -51,7 +51,7 @@ npm outdated
 npm update
 ```
 
-_Ahora comencemos la instalción de las dependecias, las sigientes dependencias son para production y development_
+_ - Ahora iniciemos la instalción de las dependecias, las sigientes dependencias son para production y development._
 
 ```
 #install dependency babel 
@@ -87,7 +87,7 @@ npm install eslint --save-dev
 
 ```
 
-_Las siguientes dependencias son para el ambiente development_
+_ - Las siguientes dependencias son para el ambiente development._
 
 ```
 #npm install dependency react-hot-loader. Mode HotModuleReplacementPlugin. env development 
@@ -98,7 +98,7 @@ npm install asset-require-hook
 
 ```
 
-_Las siguientes dependencias son para el ambiente production_
+_ - Las siguientes dependencias se eejecutan en el ambiente production._
 
 ```
 #npm install dependency helmet  env production
@@ -126,30 +126,30 @@ npm install webpack-manifest-plugin
 
 ## Despliegue 📦
 
-_Después de instalar las dependencias dependiendo del ambiente, podemos hacer el despliegue de nuestro proyecto para verlo en el navegador_
+_Después de instalar las dependencias dependiendo del ambiente, podemos hacer el despliegue de nuestro proyecto para visualizarlo en nuestro navegador._
 
-_Para el ambiente de desarrollo (env development), estan los siguientes comandos_
+_Para el ambiente de desarrollo (env development), estan los siguientes comandos._
 
-_Si queremos visualizar el proyecto en mode development, ejecutamos la siguiente instrucción_
+_ - Si queremos visualizar el proyecto en mode development, ejecutamos la siguiente instrucción._
 ```
 npm run start
 ```
 
-_Si queremos ejecutar el proyeco en modo Hot Module Replacement, esta funcionaldad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando_
+_ - Si queremos ejecutar el proyeco en modo Hot Module Replacement, esta funcionaldad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando._
 
 ```
 npm run start:dev
 ```
 
-_Antes de realizar el despligue en producción es recomendable usar ESLint. ESLint es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript. Ejecutamos la siguinete instrucción oara analizar nuestro código_
+_ - Antes de realizar el despligue en producción es recomendable usar ESLint. ESLint es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript. Ejecutamos la siguinete instrucción para analizar nuestro código._
 
 ```
 npm run lint
 ```
 
-_El despliegue en producción de realiza ejecutando las siguientes instrucciones_
+_El despliegue en producción de realiza ejecutando las siguientes instrucciones._
 
-_Antes de iniciar el servidor es necesario construir los archivos, para esto ejecutamos el siguiente comando_
+_Antes de iniciar el servidor es necesario construir los archivos, para esto ejecutamos el siguiente comando._
 
 ```
 npm run build
@@ -163,7 +163,7 @@ node src/server
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Menciona las herramientas que utilizaste para crear tu proyecto._
 
 * [REACT](https://reactjs.org/) - REACT  A JavaScript library for building user interfaces.
 * [Git](https://git-scm.com/) - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
@@ -179,6 +179,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 _Involucrados en el proyecto_
 
+* **Sergio Torres** - *Chief Operating Officer* - [sergio](sergio@kea.mx)
 * **Iván de Jesús López Aragón** - *IT Member* - [ilopez](ilopez@kea.mx)
 
 ## Licencia 📄
