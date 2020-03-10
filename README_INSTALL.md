@@ -51,7 +51,7 @@ npm outdated
 npm update
 ```
 
-_ - Ahora iniciemos la instalción de las dependecias, las sigientes dependencias son para production y development._
+_ - Ahora iniciemos la instalción de las dependecias, las sigientes dependencias son para production y **development**._
 
 ```
 #install dependency babel 
@@ -87,13 +87,13 @@ npm install eslint --save-dev
 
 ```
 
-_ - Las siguientes dependencias son para el ambiente development._
+_ - Las siguientes dependencias son para el ambiente **development**._
 
 ```
-#npm install dependency react-hot-loader. Mode HotModuleReplacementPlugin. env development 
+#npm install dependency react-hot-loader. Mode HotModuleReplacementPlugin. env **development** 
 npm install react-hot-loader --dev
 
-#npm install dependency asset-require-hook. env development 
+#npm install dependency asset-require-hook. env **development** 
 npm install asset-require-hook
 
 ```
@@ -128,20 +128,20 @@ npm install webpack-manifest-plugin
 
 _Después de instalar las dependencias dependiendo del ambiente, podemos hacer el despliegue de nuestro proyecto para visualizarlo en nuestro navegador._
 
-_Para el ambiente de desarrollo (env development), estan los siguientes comandos._
+_Para el ambiente de desarrollo (env **development**), estan los siguientes comandos._
 
-_ - Si queremos visualizar el proyecto en mode development, ejecutamos la siguiente instrucción._
+_Si queremos visualizar el proyecto en mode **development**, ejecutamos la siguiente instrucción._
 ```
 npm run start
 ```
 
-_ - Si queremos ejecutar el proyeco en modo Hot Module Replacement, esta funcionaldad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando._
+_Si queremos ejecutar el proyeco en modo Hot Module Replacement, esta funcionaldad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando._
 
 ```
 npm run start:dev
 ```
 
-_ - Antes de realizar el despligue en producción es recomendable usar ESLint. ESLint es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript. Ejecutamos la siguinete instrucción para analizar nuestro código._
+_Antes de realizar el despligue en producción es recomendable usar ESLint. ESLint es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript. Ejecutamos la siguinete instrucción para analizar nuestro código._
 
 ```
 npm run lint
