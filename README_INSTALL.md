@@ -163,7 +163,7 @@ node src/server
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto._
+_Estas son las principales herramientas que se usaron para construir este proyecto._
 
 * [REACT](https://reactjs.org/) - REACT  A JavaScript library for building user interfaces.
 * [Git](https://git-scm.com/) - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
