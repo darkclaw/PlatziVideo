@@ -1,6 +1,6 @@
 # REACT Server Side Rendering 
 
-_Esta arquitectura es una propuesta inicial, para comenzar cualquier desarrollo Frontend en KEA Digital. Con Tecnología JavaScript, NodeJs, REACT, REDUX, Webpack, Express (SSR), MongoDB y SASS._
+_Esta arquitectura es una propuesta inicial, para comenzar cualquier desarrollo Frontend en [KEA Digital](https://kea.mx/). Con Tecnología **JavaScript**, **NodeJs**, **REACT**, **REDUX**, **Webpack**, **Express** (SSR), **MongoDB** y **SASS**._
 
 ## Comenzando 
 
@@ -11,7 +11,7 @@ Mira **Despliegue** para conocer como desplegar el proyecto en producción y des
 
 ### Pre-requisitos 📋
 
-_Es necesario instalar npm, para eso necesitamos instalar node en nuestro ambiente local, las siguientes instrucciones son para MacOS (la versión que se tiene al momento de realizar este documento es 10.14.6)_
+_Es necesario instalar **npm**, para eso necesitamos instalar node en nuestro ambiente local, las siguientes instrucciones son para **MacOS** (la versión que se tiene al momento de realizar este documento es **10.14.6**)_
 
 ```
 brew update
@@ -21,17 +21,17 @@ brew install node
 brew upgrade node
 ```
 
-_Antes de instalar las dependencias es necesario definir en que ambiente trabajaremos nuestro proyecto, entonces creamos el archivo .env si no existe, si ya se encuentra en el proyecto entonces lo modificamos._
+_Antes de instalar las dependencias es necesario definir en que ambiente trabajaremos nuestro proyecto, entonces creamos el archivo **.env** si no existe, si ya se encuentra en el proyecto entonces lo modificamos._
 
-_El archivo .env debe conter los siquientes parámetros_
+_El archivo **.env** debe conter los siquientes parámetros_
 
-_.env **development**_
+_**.env** **development**_
 ```
 ENV=development
 PORT=3000
 ```
 
-_.env **production**_
+_**.env** **production**_
 ```
 ENV=production
 PORT=8080
@@ -39,7 +39,7 @@ PORT=8080
 
 ### Instalación 🔧
 
-_Los siguientes comandos son para actualizar e instalar las dependencias dependiendo del ambiente, las opciones que tenemos son **development** y **production**. Algunas dependencias solo se usan en production y otras en development como veremos más adelante_
+_Los siguientes comandos son para actualizar e instalar las dependencias dependiendo del ambiente, las opciones que tenemos son **development** y **production**. Algunas dependencias solo se usan en **production** y otras en **development** como veremos más adelante_
 
 _Comencemos actualizando las dependencias del package.json con los siguientes comandos._
 
@@ -51,7 +51,7 @@ npm outdated
 npm update
 ```
 
-_Ahora iniciemos la instalción de las dependecias, las sigientes dependencias son para production y **development**._
+_Ahora iniciemos la instalción de las dependecias, las sigientes dependencias son para **production** y **development**._
 
 ```
 #install dependency babel 
@@ -90,15 +90,15 @@ npm install eslint --save-dev
 _Las siguientes dependencias son para el ambiente **development**._
 
 ```
-#npm install dependency react-hot-loader. Mode HotModuleReplacementPlugin. env **development** 
+#npm install dependency react-hot-loader. Mode HotModuleReplacementPlugin. env development
 npm install react-hot-loader --dev
 
-#npm install dependency asset-require-hook. env **development** 
+#npm install dependency asset-require-hook. env development 
 npm install asset-require-hook
 
 ```
 
-_Las siguientes dependencias se eejecutan en el ambiente production._
+_Las siguientes dependencias se ejecutan en el ambiente **production**._
 
 ```
 #npm install dependency helmet  env production
@@ -135,13 +135,13 @@ _Si queremos visualizar el proyecto en mode **development**, ejecutamos la sigui
 npm run start
 ```
 
-_Si queremos ejecutar el proyeco en modo Hot Module Replacement, esta funcionaldad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando._
+_Si queremos ejecutar el proyeco en modo Hot Module Replacement. Esta funcionaldad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando._
 
 ```
 npm run start:dev
 ```
 
-_Antes de realizar el despligue en producción es recomendable usar ESLint. ESLint es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript. Ejecutamos la siguinete instrucción para analizar nuestro código._
+_Antes de realizar el despligue en producción es recomendable usar **ESLint**. **ESLint** es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código **JavaScript**. Ejecutamos la siguinete instrucción para analizar nuestro código._
 
 ```
 npm run lint
@@ -155,7 +155,7 @@ _Antes de iniciar el servidor es necesario construir los archivos, para esto eje
 npm run build
 ```
 
-_Después de construir el proyecto para producción, se ejecuta el siguiente comando para iniciar el servidor en el puerto indicado en el archivo .env_
+_Después de construir el proyecto para producción, se ejecuta el siguiente comando para iniciar el servidor en el puerto indicado en el archivo **.env**_
 
 ```
 node src/server
