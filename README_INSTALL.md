@@ -1,6 +1,6 @@
 # REACT Server Side Rendering 
 
-_Esta arquitectura es una propuesta inicial, para comenzar cualquier desarrollo Frontend en [KEA Digital](https://kea.mx/). Con Tecnología **JavaScript**, **NodeJs**, **REACT**, **REDUX**, **Webpack**, **Express** (SSR), **MongoDB** y **SASS**._
+_Esta arquitectura es una propuesta inicial, para comenzar cualquier desarrollo Frontend en [KEA Digital](http://kea.mx/). Con Tecnología **JavaScript**, **NodeJs**, **REACT**, **REDUX**, **Webpack**, **Express** (SSR), **MongoDB** y **SASS**._
 
 ## Comenzando 
 
@@ -41,7 +41,7 @@ PORT=8080
 
 _Los siguientes comandos son para actualizar e instalar las dependencias dependiendo del ambiente, las opciones que tenemos son **development** y **production**. Algunas dependencias solo se usan en **production** y otras en **development** como veremos más adelante_
 
-_Comencemos actualizando las dependencias del package.json con los siguientes comandos._
+_Comencemos actualizando las dependencias del **package.json** con los siguientes comandos._
 
 ```
 #verify dependency out date
@@ -135,7 +135,7 @@ _Si queremos visualizar el proyecto en mode **development**, ejecutamos la sigui
 npm run start
 ```
 
-_Si queremos ejecutar el proyeco en modo Hot Module Replacement. Esta funcionaldad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando._
+_Si queremos ejecutar el proyeco en modo **Hot Module Replacement**. Esta funcionalidad permite hacer el despligue pero si hacemos una modificación al código lo mostrara enseguida sin necesidad de recargar el proyecto o reconstruir. Para esta opción, ejecutamos el siguiente comando._
 
 ```
 npm run start:dev
